@@ -5,7 +5,7 @@ This code can do inline sha256 calculations
 package main
 
 import (
-    "../shaproxy"
+    "github.com/Harnish/sha256proxy"
     "fmt"
     "io"
     "os"
