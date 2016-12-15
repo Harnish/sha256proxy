@@ -37,12 +37,14 @@ func (me *ShaProxy) NewProxyReader(r io.Reader) *Reader {
 	return &Reader{r, me}
 }
 
-// Returns the value from the private sumBytes variable.  Requires Finish to be called before the value is populated.PANIC
+// Returns the value from the private sumBytes variable in a byteslice representation.
+// Requires Finish to be called before the value is populated.
 func (me *ShaProxy) SumBytes() []byte {
 	return me.sumBytes
 }
 
-// Retruns the variable sumHex.  Requires Finish to be called before the value is populated.
+// Retruns the private variable sumHex, which is the hex representation in a string.
+// Requires Finish to be called before the value is populated.
 func (me *ShaProxy) SumHex() string {
 	return me.sumHex
 }
