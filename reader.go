@@ -4,6 +4,7 @@ import (
 	"io"
 )
 
+// Impliments a proxy reader.
 type Reader struct {
 	io.Reader
 	shahash *ShaProxy
