@@ -1,5 +1,5 @@
 This code can do inline sha256 calculations
-
+[godoc:](https://godoc.org/github.com/Harnish/sha256proxy)
 
 ```golang
 package main
