@@ -13,8 +13,8 @@ import (
 
 func main() {
     shain := shaproxy.New()
-    file := "shaproxy"
-    f, err := os.Open(file)
+   
+    f, err := os.Open("myfile.txt")
     if err != nil {
         fmt.Println(err)
     }
